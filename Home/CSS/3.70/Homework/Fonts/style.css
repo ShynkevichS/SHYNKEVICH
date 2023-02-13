@@ -1,0 +1,18 @@
+p3 {
+  font-size: 15px;
+  border-style: double solid solid dashed;
+  border-color: brown blue;
+  border-width: 3px 1px 2px 4px;
+}
+p {
+  font-family: "Oswald", sans-serif;
+}
+p2 {
+  font-family: "Lobster", cursive;
+}
+div {
+  font-family: "Press Start 2P";
+}
+p5 {
+  font-family: "Marck Script";
+}
