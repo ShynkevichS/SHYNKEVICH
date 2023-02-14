@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Homework/Fonts/style.css" />
+    <!--Style-->
+    <style>
+      div {
+        font-size: 20px;
+        font-family: "Oswald", sans-serif;
+      }
+    </style>
+
+    <title>BRUCE-CANDY</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">
+      Разберем на примере цвета
+      <span> <font color="chucknorris">Чак Норрис</font></span>
+    </h1>
+    <div>
+      Оказывается, так заведено еще со времен популярности
+      <b>Netscape</b>:
+      <br />
+      <p style="border-left: solid; border-color: cornflowerblue">
+        Пропускаемые цифры распознаются как 0[...]. Некорректные символы
+        распознаются как 0.<br />Так что, например, значения #F0F0F0, F0F0F0,
+        F0F0F, #FxFxFx и FxFxFx – одно и то же.
+      </p>
+      <p>
+        Подробнейший разбор алгоритма разбора приведен по
+        <a
+          href="http://scrappy-do.blogspot.com/2004/08/little-rant-about-microsoft-internet.html"
+          >ссылке</a
+        >.
+      </p>
+      <p>Если применить эти правила, то получим следующее:</p>
+      <ul>
+        <li>
+          Заменяем все неправильные шестнадцатеричные символы нулями 0,
+          <strong>chucknorris</strong> превращается в
+          <strong>c00c0000000</strong>
+        </li>
+        <li>
+          “Добиваем” число нулями до количества знаков, делимого на 3 (11
+          &#8594;12), получаем <strong> 0000 0000</strong>
+        </li>
+        <li>
+          Разбиваем на три группы, каждая из которых отвечает за одну компоненту
+          RGB: <strong>RGB (c00c, 0000, 0000)</strong>
+        </li>
+        <li>
+          Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем
+          наш результат <strong>RGB (c0, 00, 00) = #C00000</strong> или он же
+          <strong>RGB(192, 0, 0)</strong>.
+        </li>
+      </ul>
+      <p>
+        Следовательно если разобрать цвет
+        <font color="#BruceWillis">Bruce Willis</font> и цвет
+        <font color="#CANDY">CANDY</font>, то получаем следующее: brucewillis =
+        b000e000000&#8594;(b0 e0 00)&#8594;#b0e000; CANDY = #CA0D00
+      </p>
+    </div>
+    <hr />
+  </body>
+</html>
