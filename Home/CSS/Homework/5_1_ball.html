@@ -38,7 +38,8 @@
       .text {
         font-family: "Courier New", Courier, monospace;
         font-size: 18px;
-        margin-left: 384px;
+        margin-left: 382px;
+        margin-right: 200px;
       }
     </style>
     <title>DIV</title>
@@ -59,11 +60,19 @@
     </div>
     <div
       style="
-        background-image: url(../../../image/Scr.jpg);
-        background-repeat: repeat-y;
+        background: url(../../../image/мяч.png) left top no-repeat,
+          url(../../../image/мяч.png) 18% bottom no-repeat,
+          url(../../../image/мяч.png) 18% top no-repeat,
+          url(../../../image/мяч.png) left bottom no-repeat,
+          url(../../../image/Scr.jpg) top left repeat-y,
+          url(../../../image/мяч.png) right bottom no-repeat,
+          url(../../../image/мяч.png) 94% bottom no-repeat,
+          url(../../../image/мяч.png) right top no-repeat,
+          url(../../../image/мяч.png) 94% top no-repeat,
+          url(../../../image/Scr2.jpg) right repeat-y;
       "
     >
-      <div class="menu" style="width: 20%; float: left">
+      <div class="menu" style="width: 384px; float: left">
         <ul>
           <li>
             <a
@@ -83,12 +92,18 @@
           <li>Шашки</li>
         </ul>
       </div>
+      <div style="float: right; width: 200px; text-align: center">
+        <p>Баннер</p>
+      </div>
+
       <div
         class="text"
         style="
-          background-image: url(../../../image/мяч.png);
-          background-position: top right;
-          background-repeat: repeat-y;
+          background: url(../../../image/мяч.png) left bottom no-repeat,
+            url(../../../image/мяч.png) right bottom no-repeat,
+            url(../../../image/мяч.png) left top no-repeat,
+            url(../../../image/мяч.png) right top no-repeat;
+          background-color: rgb(100, 100, 220);
         "
       >
         <h3>ФУТБОЛ</h3>
@@ -131,10 +146,9 @@
         </p>
       </div>
     </div>
-
     <div
       style="
-        background-color: pink;
+        background-color: rgb(94, 93, 108);
         height: 40px;
         padding-top: 7px;
         clear: left;
