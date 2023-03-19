@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li:nth-child(even) {
+        border-left: solid 4px red;
+      }
+      .first {
+        list-style-type: none;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .second li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 100px;
+      }
+      .third div {
+        padding-right: 94px;
+        border-right: solid 4px red;
+        margin-left: 33px;
+        margin-right: 57px;
+        float: left;
+      }
+
+      .fourth a::before {
+        content: "";
+        border-left: solid 4px red;
+        margin-right: 60px;
+        padding-right: 15px;
+        padding-left: 3px;
+        margin-left: 71px;
+      }
+      a:hover {
+        color: red;
+      }
+      body {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+    </style>
+    <title>Link</title>
+  </head>
+  <body>
+    <div class="first">
+      <li><a href="#">первая ссылка</a></li>
+      <li></li>
+      <li><a href="#">вторая ссылка</a></li>
+      <li></li>
+      <li><a href="#">третья ссылка</a></li>
+      <li></li>
+      <li><a href="#">четвертая ссылка</a></li>
+      <li></li>
+      <li><a href="#">пятая ссылка</a></li>
+    </div>
+    <hr />
+    <br />
+    <br />
+    <div class="second">
+      <li><a href="#">первая ссылка</a></li>
+      <li></li>
+      <li><a href="#">вторая ссылка</a></li>
+      <li></li>
+      <li><a href="#">третья ссылка</a></li>
+      <li></li>
+      <li><a href="#">четвертая ссылка</a></li>
+      <li></li>
+      <li><a href="#">пятая ссылка</a></li>
+    </div>
+    <hr />
+    <hr />
+    <br />
+    <br />
+    <div class="third">
+      <div><a href="#">первая ссылка</a></div>
+      <div><a href="#">вторая ссылка</a></div>
+      <div><a href="#">третья ссылка</a></div>
+      <div><a href="#">четвертая ссылка</a></div>
+      <div><a href="#">пятая ссылка</a></div>
+    </div>
+    <hr />
+    <br />
+    <br />
+    <div class="fourth">
+      <a href="#">первая ссылка</a>
+      <a href="#">вторая ссылка</a>
+      <a href="#">третья ссылка</a>
+      <a href="#">третья ссылка</a>
+      <a href="#">пятая ссылка</a>
+    </div>
+  </body>
+</html>
