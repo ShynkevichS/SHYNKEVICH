@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logo</title>
     <style>
-      img {
-        width: 1520px;
+      .width {
+        width: 100%;
+      }
+      @media all and (max-width: 540px) {
+        .width {
+          width: 10%;
+        }
       }
     </style>
   </head>
   <body>
     <picture>
-      <source srcset="logo.webp" media="max-width: 530px" />
-      <img src="../../../image/macron.webp" />
+      <source media="(max-width: 540px)" srcset="../../../image/logo.webp" />
+      <img class="width" src="../../../image/macron.webp" alt="macron" />
     </picture>
   </body>
 </html>
