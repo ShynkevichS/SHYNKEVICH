@@ -11,6 +11,7 @@
         padding: 0;
         box-sizing: border-box;
       }
+      .topmenu{display: flex;}
       .top {
         width: 100%;
         height: 30px;
@@ -19,6 +20,8 @@
         text-align: center;
         padding: 5px;
         font-weight: bold;
+        position: relative;
+        font-size: 18px;
       }
       .cont {
       }
@@ -30,6 +33,7 @@
         margin-left: 11%;
         margin-left: 195px;
         background: url(../../../image/мяч.png) repeat-y top right;
+        
       }
       .float {
         display: flex;
@@ -55,15 +59,18 @@
         font-weight: bold;
       }
       h1{text-align: center;}
+      .enter{border: 2px solid;width: 120px;height: 33px;background-color: rgb(255, 247, 0); position:fixed;z-index: 2;margin-top: -20px;margin-left: 40%}
      @media all and (max-width: 603px){
         .float{background: url(../../../image/Scr1-2.jpg) repeat-y top left}
         .text{margin-left: 25px}
         .photo{padding: 20px; width: 325px; height: 235px}
-        .list{font-size: 10px}}
+        .list{font-size: 10px}
+        .top{font-size: 14px;text-align: start}}
+        
     </style>
   </head>
   <body>
-    <div class="top">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ</div>
+    <div class="topmenu"><div class="top">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ</div></div>
     <div class="cont">
       <div class="float">
         <div class="menu">
@@ -81,6 +88,7 @@
           </ul>
         </div>
         <div class="text">
+          <div class="enter"><a href="https://vk.com/afcracing">Вступить в клуб</a></div>
           <p>
             <h1>Футбол</h1>
             <img class="photo" src="../../../image/Football.jpeg" alt="футбол" />ФИФА и
@@ -116,6 +124,7 @@
             футбол. В Англии название «соккер» устарело и новые поколения
             болельщиков теперь считают его
           </p>
+        
         </div>
       </div>
     </div>

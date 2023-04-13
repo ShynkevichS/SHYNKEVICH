@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .name {
+        width: 88%;
+        margin-left: 67px;
+      }
+      .cont {
+        display: block;
+        margin-left: 10px;
+      }
+      .select {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 122px;
+      }
+      .answer {
+        margin-left: 50px;
+      }
+      .comm {
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+      .column {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        float: left;
+      }
+      .mytext {
+        width: 100%;
+        height: 100px;
+      }
+      .pub {
+        margin-left: 132px;
+      }
+      p {
+        float: left;
+      }
+      @media all and (max-width: 580px) {
+        .name,
+        .select,
+        .text {
+          margin-left: 0;
+          width: 93%;
+        }
+        .answer {
+          margin-left: 0;
+        }
+        .column {
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+        .pub {
+          margin-left: 0;
+        }
+        span {
+          display: block;
+        }
+        p {
+          float: none;
+        }
+        .br {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <br />
+      <form method="get" action="http://fe.it-academy.by/TestForm.php"></form>
+      <div class="cont">
+        <p>
+          Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+        </p>
+        <br />
+        <br class="br" />
+        <p>Название статьи:</p>
+        <span
+          ><input class="name" type="text" name="name" placeholder=""
+        /></span>
+        <br class="br" />
+        <div class="column">Рубрика:</div>
+        <select class="select" name="choice">
+          <option value="1">программирование</option>
+          <option value="1">дизайн</option>
+          <option value="1">тестирование</option>
+        </select>
+
+        <br />
+        <p>Публикация:</p>
+        <div class="pub">
+          <span
+            ><input class="answer" type="radio" name="answer" value="1" />на
+            сайте</span
+          >
+          <span><input type="radio" name="answer" value="2" />в журнале</span>
+          <span
+            ><input type="radio" name="answer" value="3" />на сайте и в
+            журнале</span
+          >
+        </div>
+        <br class="br" />
+        <div>
+          Разрешить комментарии:<input
+            class="comm"
+            type="checkbox"
+            name="cal"
+            value="yes"
+            checked
+          />
+        </div>
+        <br class="br" />
+        <div class="text">
+          Текст статьи:<br /><textarea class="mytext" name="mytext"></textarea>
+        </div>
+        <br />
+        <button>Опубликовать</button>
+      </div>
+    </div>
+  </body>
+</html>
