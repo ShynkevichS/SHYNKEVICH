@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      .container {
+        height: 400px;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        position: relative;
+        left: 0;
+        border-radius: 50%;
+        animation-name: aqua-circle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes aqua-circle {
+        0% {
+          left: 0;
+        }
+        45% {
+          border-radius: 0%;
+          background-color: white;
+        }
+        100% {
+          left: 1400px;
+        }
+      }
+      .contend:hover .circle {
+        animation-play-state: paused;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .img {
+        width: 200px;
+        height: 200px;
+        background: url(/image/dragon.png);
+      }
+
+      .img2 {
+        width: 200px;
+        height: 200px;
+        background: url(/image/dragonstar.png);
+      }
+      .container:hover .img {
+        animation-name: rotation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .container:hover .img2 {
+        animation-name: move;
+        animation-duration: 5s;
+
+        animation-timing-function: linear;
+      }
+      @keyframes move {
+        0% {
+          transform: translateX(0%) translateY(100%);
+        }
+        100% {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contend">
+      <div class="circle"></div>
+    </div>
+    <div class="container">
+      <div class="img"></div>
+      <div class="img2"></div>
+    </div>
+  </body>
+</html>

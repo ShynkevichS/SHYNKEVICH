@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      .image {
+        height: 155px;
+        width: 128px;
+        background: url(/image/sprites.png) 0px 0px;
+        animation: play 1s steps(6) infinite, step 10s linear infinite;
+        position: absolute;
+        left: 0;
+      }
+      @keyframes play {
+        100% {
+          background-position: -794px;
+        }
+      }
+      @keyframes step {
+        100% {
+          left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image"></div>
+    </div>
+  </body>
+</html>
