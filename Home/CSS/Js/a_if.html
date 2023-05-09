@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a_if</title>
+  </head>
+  <body>
+    <script>
+      var name1 = prompt("Введите вашу фамилию");
+      var name2 = prompt("Введите ваше имя");
+      var name3 = prompt("Введите ваше отчество");
+      var age = prompt("Ваш возраст? ");
+      while (true) {
+        var age = parseInt(age);
+        if (!isNaN(age)) break;
+        var age = prompt("Введите корректное число:");
+      }
+      var day = age * 365;
+      var year = age + 5;
+      var gender = confirm("Ваш пол мужской?");
+      if (gender === true) {
+        var gender = "Мужской";
+      } else {
+        var gender = "Женский";
+      }
+      var pens = confirm("Вы на пенсии?");
+      if (gender === "Мужской")
+        if (age >= 62) {
+          var pens = "Да";
+        } else {
+          var pens = "Нет";
+        }
+      if (gender === "Женский")
+        if (age >= 58) {
+          var pens = "Да";
+        } else {
+          var pens = "Нет";
+        }
+      alert(
+        "ФИО" +
+          ":" +
+          name1 +
+          " " +
+          name2 +
+          " " +
+          name3 +
+          "\n" +
+          "Ваш возраст в годах" +
+          ":" +
+          age +
+          "\n" +
+          "Ваш возраст в днях" +
+          ":" +
+          day +
+          "\n" +
+          "Через 5 лет Вам будет" +
+          ":" +
+          year +
+          "\n" +
+          "Ваш пол" +
+          ":" +
+          gender +
+          "\n" +
+          "Вы на пенсии:" +
+          pens
+      );
+    </script>
+  </body>
+</html>
