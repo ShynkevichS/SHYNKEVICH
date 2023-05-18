@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*container*/
+.container {
+  width: 100%;
+  height: 2600px;
+  background-color: black;
+}
+
+/*header*/
+.header {
+  width: 100%;
+  height: 1082px;
+  background: url(image/BG.png) no-repeat top right;
+}
+.logo {
+  width: 91px;
+  height: 56px;
+  background: url(image/Group\ 57.png) no-repeat;
+  margin-left: 92px;
+  position: absolute;
+  margin-top: 32px;
+}
+.select {
+  position: absolute;
+  width: 70px;
+  height: 23px;
+  right: 10%;
+  top: 46px;
+
+  border: none;
+  appearance: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+  background-color: transparent;
+  outline: none;
+}
+.icon {
+  width: 7px;
+  height: 5px;
+  background: url(image/ic_arrow.png);
+  right: 11%;
+  top: 57px;
+  position: absolute;
+}
+.subject {
+  height: 37px;
+  width: 40px;
+  background: url(image/subject.png) no-repeat top right;
+  position: absolute;
+  top: 40px;
+  right: 7%;
+}
+
+.luxury {
+  height: 77px;
+  width: 630px;
+  position: absolute;
+  left: 92px;
+  right: 49.86%;
+  top: 250px;
+  bottom: 82.54%;
+
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 60px;
+
+  leading-trim: both;
+  text-edge: cap;
+  letter-spacing: 1.5px;
+  background: linear-gradient(180deg, #fffeef 32.17%, #9b9989 97.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.luxury2 {
+  height: 38px;
+  width: 630px;
+  position: absolute;
+  left: 92px;
+  top: 320px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 38px;
+  letter-spacing: -0.3px;
+  background: linear-gradient(180deg, #fffeef 32.17%, #9b9989 97.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fix {
+  position: absolute;
+  z-index: 2;
+}
+.question {
+  height: 48px;
+  width: 298px;
+  background: url(image/Ask.png) no-repeat;
+  position: fixed;
+  top: 666px;
+  right: 10%;
+}
+.ask {
+  height: 70px;
+  width: 70px;
+  background: url(image/button_2.png) no-repeat;
+  position: fixed;
+  top: 650px;
+  right: 4%;
+  z-index: 2;
+}
+.botton1 {
+  width: 342px;
+  height: 68px;
+  margin-top: 425px;
+  position: absolute;
+  margin-left: 92px;
+  border: 2px solid white;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fffeef 32.17%, #9b9989 97.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*menu*/
+.menu {
+  display: grid;
+  grid-template-columns:
+    minmax(175px, 342px) minmax(175px, 342px) minmax(175px, 342px)
+    minmax(175px, 297px);
+  z-index: 1;
+  grid-column-gap: 30px;
+  margin-left: 102px;
+  overflow: hidden;
+}
+.slot1 {
+  z-index: 1;
+  height: 198px;
+  background: url(image/slot4.png) no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.slot2 {
+  z-index: 1;
+  height: 198px;
+  background: url(image/slot2.png) no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.slot3 {
+  z-index: 1;
+  height: 198px;
+  background: url(image/slot3.png) no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.slot4 {
+  z-index: 1;
+  height: 198px;
+  background: url(image/slot4.png) no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+}
+.menu1 {
+  position: absolute;
+  height: 36px;
+  padding-left: 46px;
+  padding-top: 47px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f4f5f7;
+}
+.text1 {
+  position: absolute;
+  height: 28px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  padding-top: 103px;
+  color: #f4f5f7;
+  padding-left: 46px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+/*content*/
+.content {
+  margin-top: 80px;
+  display: grid;
+  z-index: 1;
+  margin-left: 102px;
+}
+.image_bar1 {
+  position: absolute;
+  width: 892px;
+  height: 752px;
+  background: url(image/image_bar1.png) no-repeat;
+}
+.image_bar2 {
+  position: absolute;
+  width: 340px;
+  height: 373px;
+  background: url(image/image_bar2.png) no-repeat;
+  left: 68%;
+}
+.image_bar3 {
+  position: absolute;
+  width: 340px;
+  height: 355.04px;
+  background: url(image/image_bar3.png) no-repeat;
+  left: 68%;
+  top: 1758px;
+}
+/*line*/
+.line {
+  margin-top: 870px;
+  position: absolute;
+  width: 1271px;
+  height: 4px;
+  background: url(image/line.png) no-repeat;
+  margin-left: 102px;
+}
+/*footer*/
+.footer {
+  margin-top: 930px;
+  margin-left: 102px;
+}
+.mail {
+  position: absolute;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #fdecdb;
+}
+.phone {
+  position: absolute;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #fdecdb;
+  margin-top: 44px;
+}
+.adr {
+  position: absolute;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #fdecdb;
+  margin-top: 88px;
+}
+.end {
+  margin-left: 102px;
+}
+.c {
+  position: absolute;
+  width: 433px;
+  height: 20px;
+  left: 92px;
+  top: 2550px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fdecdb;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.join {
+  margin-top: -6px;
+  position: absolute;
+  height: 18px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: right;
+  letter-spacing: 3px;
+  color: #fdecdb;
+  right: 9%;
+}
